@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.actionsField = new System.Windows.Forms.Label();
             this.userNumberBox = new System.Windows.Forms.TextBox();
             this.checkButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -43,17 +42,8 @@
             this.button9 = new System.Windows.Forms.Button();
             this.delete = new System.Windows.Forms.Button();
             this.invintation = new System.Windows.Forms.Label();
+            this.actionsField = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
-            // 
-            // actionsField
-            // 
-            this.actionsField.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.actionsField.Dock = System.Windows.Forms.DockStyle.Right;
-            this.actionsField.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.actionsField.Location = new System.Drawing.Point(499, 0);
-            this.actionsField.Name = "actionsField";
-            this.actionsField.Size = new System.Drawing.Size(315, 501);
-            this.actionsField.TabIndex = 0;
             // 
             // userNumberBox
             // 
@@ -197,14 +187,28 @@
             this.invintation.Text = "Bools And Cows";
             this.invintation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // actionsField
+            // 
+            this.actionsField.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.actionsField.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.actionsField.Dock = System.Windows.Forms.DockStyle.Right;
+            this.actionsField.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.actionsField.Location = new System.Drawing.Point(487, 0);
+            this.actionsField.Name = "actionsField";
+            this.actionsField.ReadOnly = true;
+            this.actionsField.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.actionsField.Size = new System.Drawing.Size(327, 501);
+            this.actionsField.TabIndex = 15;
+            this.actionsField.Text = "";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(814, 501);
-            this.Controls.Add(this.invintation);
             this.Controls.Add(this.actionsField);
+            this.Controls.Add(this.invintation);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -227,8 +231,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label actionsField;
         private System.Windows.Forms.TextBox userNumberBox;
         private System.Windows.Forms.Button checkButton;
         private System.Windows.Forms.Button button1;
@@ -243,6 +245,7 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button delete;
         private System.Windows.Forms.Label invintation;
+        private System.Windows.Forms.RichTextBox actionsField;
     }
 }
 
