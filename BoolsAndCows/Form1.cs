@@ -18,7 +18,6 @@ namespace BoolsAndCows
         }
 
         // MAKE A BUTTON HANDLER
-        // MAKE A REPOSITORY(LOCAL)
         private void MainForm_Load(object sender, EventArgs e)
         {
             
