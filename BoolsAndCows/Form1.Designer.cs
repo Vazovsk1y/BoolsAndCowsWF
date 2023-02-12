@@ -43,6 +43,8 @@
             this.delete = new System.Windows.Forms.Button();
             this.invintation = new System.Windows.Forms.Label();
             this.actionsField = new System.Windows.Forms.RichTextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.startButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // userNumberBox
@@ -68,6 +70,7 @@
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(12, 416);
             this.button1.Name = "button1";
@@ -78,6 +81,7 @@
             // 
             // button2
             // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Location = new System.Drawing.Point(56, 416);
             this.button2.Name = "button2";
@@ -88,6 +92,7 @@
             // 
             // button3
             // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.Location = new System.Drawing.Point(100, 416);
             this.button3.Name = "button3";
@@ -98,6 +103,7 @@
             // 
             // button4
             // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4.Location = new System.Drawing.Point(144, 416);
             this.button4.Name = "button4";
@@ -108,6 +114,7 @@
             // 
             // button5
             // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button5.Location = new System.Drawing.Point(188, 416);
             this.button5.Name = "button5";
@@ -129,6 +136,7 @@
             // 
             // button6
             // 
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button6.Location = new System.Drawing.Point(232, 416);
             this.button6.Name = "button6";
@@ -139,6 +147,7 @@
             // 
             // button7
             // 
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button7.Location = new System.Drawing.Point(276, 416);
             this.button7.Name = "button7";
@@ -149,6 +158,7 @@
             // 
             // button8
             // 
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button8.Location = new System.Drawing.Point(320, 416);
             this.button8.Name = "button8";
@@ -159,6 +169,7 @@
             // 
             // button9
             // 
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button9.Location = new System.Drawing.Point(364, 416);
             this.button9.Name = "button9";
@@ -169,6 +180,7 @@
             // 
             // delete
             // 
+            this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.delete.Location = new System.Drawing.Point(408, 416);
             this.delete.Name = "delete";
@@ -180,9 +192,9 @@
             // invintation
             // 
             this.invintation.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.invintation.Location = new System.Drawing.Point(78, 130);
+            this.invintation.Location = new System.Drawing.Point(93, 176);
             this.invintation.Name = "invintation";
-            this.invintation.Size = new System.Drawing.Size(326, 127);
+            this.invintation.Size = new System.Drawing.Size(267, 100);
             this.invintation.TabIndex = 14;
             this.invintation.Text = "Bools And Cows";
             this.invintation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -192,7 +204,7 @@
             this.actionsField.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.actionsField.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.actionsField.Dock = System.Windows.Forms.DockStyle.Right;
-            this.actionsField.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.actionsField.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.actionsField.Location = new System.Drawing.Point(487, 0);
             this.actionsField.Name = "actionsField";
             this.actionsField.ReadOnly = true;
@@ -201,12 +213,35 @@
             this.actionsField.TabIndex = 15;
             this.actionsField.Text = "";
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.Location = new System.Drawing.Point(38, 44);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(149, 35);
+            this.textBox1.TabIndex = 16;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // startButton
+            // 
+            this.startButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.startButton.Location = new System.Drawing.Point(35, 102);
+            this.startButton.Name = "startButton";
+            this.startButton.Size = new System.Drawing.Size(152, 41);
+            this.startButton.TabIndex = 17;
+            this.startButton.Text = "Start";
+            this.startButton.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(814, 501);
+            this.Controls.Add(this.startButton);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.actionsField);
             this.Controls.Add(this.invintation);
             this.Controls.Add(this.delete);
@@ -231,7 +266,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox userNumberBox;
         private System.Windows.Forms.Button checkButton;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
@@ -246,6 +280,9 @@
         private System.Windows.Forms.Button delete;
         private System.Windows.Forms.Label invintation;
         private System.Windows.Forms.RichTextBox actionsField;
+        private System.Windows.Forms.TextBox userNumberBox;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button startButton;
     }
 }
 
