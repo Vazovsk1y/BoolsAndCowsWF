@@ -259,6 +259,7 @@
             this.Controls.Add(this.userNumberBox);
             this.Name = "MainForm";
             this.Text = "Game";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -266,23 +267,24 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button checkButton;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button clear;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button delete;
-        private System.Windows.Forms.Label invintation;
-        private System.Windows.Forms.RichTextBox actionsField;
-        private System.Windows.Forms.TextBox userNumberBox;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button startButton;
+
+        internal System.Windows.Forms.Button checkButton;
+        internal System.Windows.Forms.Button button1;
+        internal System.Windows.Forms.Button button2;
+        internal System.Windows.Forms.Button button3;
+        internal System.Windows.Forms.Button button4;
+        internal System.Windows.Forms.Button button5;
+        internal System.Windows.Forms.Button clear;
+        internal System.Windows.Forms.Button button6;
+        internal System.Windows.Forms.Button button7;
+        internal System.Windows.Forms.Button button8;
+        internal System.Windows.Forms.Button button9;
+        internal System.Windows.Forms.Button delete;
+        internal System.Windows.Forms.Label invintation;
+        internal System.Windows.Forms.RichTextBox actionsField;
+        internal System.Windows.Forms.TextBox userNumberBox;
+        internal System.Windows.Forms.TextBox textBox1;
+        internal System.Windows.Forms.Button startButton;
     }
 }
 
