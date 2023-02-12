@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -8,7 +9,7 @@ namespace BoolsAndCows
 {
     public partial class MainForm : Form
     {
-        private GameSession GameSession { get; } = new GameSession();
+        private GameSession CurrentGameSession { get; } = new GameSession();
 
         public MainForm()
         {
@@ -18,6 +19,10 @@ namespace BoolsAndCows
         private void MainForm_Load(object sender, EventArgs e)
         {
             startButton.Click += new EventHandler(ButtonClickHandler);
+            delete.Click += new EventHandler(ButtonClickHandler);
+            clear.Click += new EventHandler(ButtonClickHandler);
+            checkButton.Click += new EventHandler(ButtonClickHandler);
+            hintButton.Click += new EventHandler(ButtonClickHandler);
             button1.Click += new EventHandler(ButtonClickHandler);
             button2.Click += new EventHandler(ButtonClickHandler);
             button3.Click += new EventHandler(ButtonClickHandler);
@@ -27,9 +32,6 @@ namespace BoolsAndCows
             button7.Click += new EventHandler(ButtonClickHandler);
             button8.Click += new EventHandler(ButtonClickHandler);
             button9.Click += new EventHandler(ButtonClickHandler);
-            delete.Click += new EventHandler(ButtonClickHandler);
-            clear.Click += new EventHandler(ButtonClickHandler);
-            checkButton.Click += new EventHandler(ButtonClickHandler);
         }
 
         private void ButtonClickHandler(object sender, EventArgs e)
@@ -61,8 +63,29 @@ namespace BoolsAndCows
                 case "Check":
                     ProcessCheckButton();
                     break;
+                case "Hint":
+                    ProcessHintButton();
+                    break;
                 default:
                     return;
+            }
+        }
+
+        private void ProcessHintButton()
+        {
+            if(!CurrentGameSession.IsGameStarted)
+            {
+                actionsField.Text += "You didn't start the game!\n";
+            }
+            else if (CurrentGameSession.IsHintsEnd)
+            {
+                actionsField.Text = "You loose! The game is end!\n";
+                textBox1.Text = string.Empty;
+                CurrentGameSession.Stop();
+            }
+            else
+            {
+                textBox1.Text = CurrentGameSession.GetHint(textBox1.Text);
             }
         }
 
@@ -91,19 +114,19 @@ namespace BoolsAndCows
 
         private void ProcessStartButton()
         {
-            if (GameSession.IsGameStarted)
+            if (CurrentGameSession.IsGameStarted)
                 actionsField.Text += "You are already in the game!\n";
             else
             {
-                GameSession.Start();
+                CurrentGameSession.Start();
                 actionsField.Text = "Welcome to the game!\n";
-                textBox1.Text = GameSession.SystemNumber;
+                textBox1.Text = string.Join("",CurrentGameSession.SystemNumber.ToCharArray().Select(i => i = '*'));
             }
         }
 
         private void ProcessCheckButton()
         {
-            if (GameSession.IsGameStarted.Equals(false))
+            if (CurrentGameSession.IsGameStarted.Equals(false))
                 actionsField.Text += "You didn't start the game!\n";
 
             else if (userNumberBox.Text.Equals(string.Empty))
@@ -117,8 +140,8 @@ namespace BoolsAndCows
 
             else
             {
-                int boolsCount = GameSession.GetBoolsCount(userNumberBox.Text, textBox1.Text);
-                int cowsCount = GameSession.GetCowsCount(userNumberBox.Text, textBox1.Text);
+                int boolsCount = CurrentGameSession.GetBoolsCount(userNumberBox.Text, CurrentGameSession.SystemNumber);
+                int cowsCount = CurrentGameSession.GetCowsCount(userNumberBox.Text, CurrentGameSession.SystemNumber);
 
                 if (!boolsCount.Equals(textBox1.Text.Length))
                     actionsField.Text += $"{userNumberBox.Text} Bools: " +
@@ -126,7 +149,7 @@ namespace BoolsAndCows
                         $"Cows: {cowsCount}\n";
                 else
                 {
-                    GameSession.Stop();
+                    CurrentGameSession.Stop();
                     actionsField.Text += "CONGRATULATION, YOU WON!";
                     textBox1.Text = string.Empty;
                 }
@@ -135,10 +158,9 @@ namespace BoolsAndCows
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if(GameSession.IsGameStarted)
+            if(CurrentGameSession.IsGameStarted)
             {
-
-                DialogResult dialogResult = MessageBox.Show("The game is active\nAre you sure that want to quit?",
+                DialogResult dialogResult = MessageBox.Show("The game is active.\nAre you sure that want to quit?",
                     "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (dialogResult.Equals(DialogResult.No))
@@ -151,7 +173,6 @@ namespace BoolsAndCows
      
      SET A CODE STRUCTURE AND DO A REFACTORING:
      * class ButtonsHandler - work with buttonsClick event;
-     * class GameSession - work with userNumber, systemNumber, actionsField, buttonCheck; 
      
      */
 

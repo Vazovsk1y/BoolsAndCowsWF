@@ -8,6 +8,18 @@ namespace BoolsAndCows
     {
         private bool isGameStarted = false;
         private string systemNumber;
+        private int usedHintCount = 0;
+        private bool isHintsEnd = false;
+
+        public bool IsHintsEnd
+        {
+            get
+            {
+                if (usedHintCount == 3)
+                    isHintsEnd = true;
+                return isHintsEnd;
+            }
+        }
 
         public bool IsGameStarted
         { 
@@ -27,6 +39,16 @@ namespace BoolsAndCows
             return string.Join("", Enumerable.Range(1, 9).OrderBy(x => randNumber.Next()).Take(NumberLength));
         }
 
+        public string GetHint(string currentNumber)
+        {
+            var symbols = currentNumber.ToCharArray();
+            var hintNumber = SystemNumber[usedHintCount];
+            symbols[usedHintCount] = hintNumber;
+            usedHintCount++;
+
+            return new string(symbols);
+        }
+
         public void Start()
         {
             isGameStarted = true;
@@ -36,6 +58,8 @@ namespace BoolsAndCows
         public void Stop()
         {
             isGameStarted = false;
+            usedHintCount = 0;
+            isHintsEnd = false;
         }
 
         public int GetBoolsCount(string userNumber, string systemNumber)

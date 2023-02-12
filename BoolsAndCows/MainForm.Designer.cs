@@ -41,15 +41,16 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.delete = new System.Windows.Forms.Button();
-            this.invintation = new System.Windows.Forms.Label();
             this.actionsField = new System.Windows.Forms.RichTextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.startButton = new System.Windows.Forms.Button();
+            this.invintation = new System.Windows.Forms.Label();
+            this.hintButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // userNumberBox
             // 
-            this.userNumberBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.userNumberBox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.userNumberBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.userNumberBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.userNumberBox.Location = new System.Drawing.Point(12, 363);
@@ -59,6 +60,7 @@
             // 
             // checkButton
             // 
+            this.checkButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.checkButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.checkButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkButton.Location = new System.Drawing.Point(153, 363);
@@ -70,6 +72,7 @@
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(12, 416);
@@ -81,6 +84,7 @@
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Location = new System.Drawing.Point(56, 416);
@@ -92,6 +96,7 @@
             // 
             // button3
             // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.Location = new System.Drawing.Point(100, 416);
@@ -103,6 +108,7 @@
             // 
             // button4
             // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4.Location = new System.Drawing.Point(144, 416);
@@ -114,6 +120,7 @@
             // 
             // button5
             // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button5.Location = new System.Drawing.Point(188, 416);
@@ -125,6 +132,7 @@
             // 
             // clear
             // 
+            this.clear.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.clear.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.clear.Location = new System.Drawing.Point(311, 363);
@@ -136,6 +144,7 @@
             // 
             // button6
             // 
+            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button6.Location = new System.Drawing.Point(232, 416);
@@ -147,6 +156,7 @@
             // 
             // button7
             // 
+            this.button7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button7.Location = new System.Drawing.Point(276, 416);
@@ -158,6 +168,7 @@
             // 
             // button8
             // 
+            this.button8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button8.Location = new System.Drawing.Point(320, 416);
@@ -169,6 +180,7 @@
             // 
             // button9
             // 
+            this.button9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button9.Location = new System.Drawing.Point(364, 416);
@@ -180,6 +192,7 @@
             // 
             // delete
             // 
+            this.delete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.delete.Location = new System.Drawing.Point(408, 416);
@@ -188,16 +201,6 @@
             this.delete.TabIndex = 13;
             this.delete.Text = "<=";
             this.delete.UseVisualStyleBackColor = true;
-            // 
-            // invintation
-            // 
-            this.invintation.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.invintation.Location = new System.Drawing.Point(93, 176);
-            this.invintation.Name = "invintation";
-            this.invintation.Size = new System.Drawing.Size(267, 100);
-            this.invintation.TabIndex = 14;
-            this.invintation.Text = "Bools And Cows";
-            this.invintation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // actionsField
             // 
@@ -216,7 +219,9 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(38, 44);
+            this.textBox1.Location = new System.Drawing.Point(12, 34);
+            this.textBox1.MaximumSize = new System.Drawing.Size(368, 35);
+            this.textBox1.MinimumSize = new System.Drawing.Size(149, 35);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(149, 35);
@@ -227,12 +232,40 @@
             // 
             this.startButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.startButton.Location = new System.Drawing.Point(35, 102);
+            this.startButton.Location = new System.Drawing.Point(9, 89);
+            this.startButton.MaximumSize = new System.Drawing.Size(372, 143);
+            this.startButton.MinimumSize = new System.Drawing.Size(152, 41);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(152, 41);
             this.startButton.TabIndex = 17;
             this.startButton.Text = "Start";
             this.startButton.UseVisualStyleBackColor = true;
+            // 
+            // invintation
+            // 
+            this.invintation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.invintation.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.invintation.Location = new System.Drawing.Point(124, 257);
+            this.invintation.Name = "invintation";
+            this.invintation.Size = new System.Drawing.Size(220, 60);
+            this.invintation.TabIndex = 18;
+            this.invintation.Text = "Bools And Cows";
+            this.invintation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // hintButton
+            // 
+            this.hintButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.hintButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.hintButton.Location = new System.Drawing.Point(9, 146);
+            this.hintButton.MaximumSize = new System.Drawing.Size(372, 143);
+            this.hintButton.MinimumSize = new System.Drawing.Size(152, 41);
+            this.hintButton.Name = "hintButton";
+            this.hintButton.Size = new System.Drawing.Size(152, 41);
+            this.hintButton.TabIndex = 19;
+            this.hintButton.Text = "Hint";
+            this.hintButton.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -240,10 +273,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(814, 501);
+            this.Controls.Add(this.hintButton);
+            this.Controls.Add(this.invintation);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.actionsField);
-            this.Controls.Add(this.invintation);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -257,7 +291,10 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkButton);
             this.Controls.Add(this.userNumberBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MinimumSize = new System.Drawing.Size(830, 540);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -280,11 +317,12 @@
         internal System.Windows.Forms.Button button8;
         internal System.Windows.Forms.Button button9;
         internal System.Windows.Forms.Button delete;
-        internal System.Windows.Forms.Label invintation;
         internal System.Windows.Forms.RichTextBox actionsField;
         internal System.Windows.Forms.TextBox userNumberBox;
         internal System.Windows.Forms.TextBox textBox1;
         internal System.Windows.Forms.Button startButton;
+        private System.Windows.Forms.Label invintation;
+        internal System.Windows.Forms.Button hintButton;
     }
 }
 
