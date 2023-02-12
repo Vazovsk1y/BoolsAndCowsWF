@@ -46,6 +46,8 @@
             this.startButton = new System.Windows.Forms.Button();
             this.invintation = new System.Windows.Forms.Label();
             this.hintButton = new System.Windows.Forms.Button();
+            this.userLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // userNumberBox
@@ -218,13 +220,13 @@
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(12, 34);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.Location = new System.Drawing.Point(9, 35);
             this.textBox1.MaximumSize = new System.Drawing.Size(368, 35);
             this.textBox1.MinimumSize = new System.Drawing.Size(149, 35);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(149, 35);
+            this.textBox1.Size = new System.Drawing.Size(152, 35);
             this.textBox1.TabIndex = 16;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -232,7 +234,7 @@
             // 
             this.startButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.startButton.Location = new System.Drawing.Point(9, 89);
+            this.startButton.Location = new System.Drawing.Point(9, 88);
             this.startButton.MaximumSize = new System.Drawing.Size(372, 143);
             this.startButton.MinimumSize = new System.Drawing.Size(152, 41);
             this.startButton.Name = "startButton";
@@ -247,9 +249,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.invintation.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.invintation.Location = new System.Drawing.Point(124, 257);
+            this.invintation.Location = new System.Drawing.Point(227, 0);
             this.invintation.Name = "invintation";
-            this.invintation.Size = new System.Drawing.Size(220, 60);
+            this.invintation.Size = new System.Drawing.Size(220, 40);
             this.invintation.TabIndex = 18;
             this.invintation.Text = "Bools And Cows";
             this.invintation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -267,6 +269,26 @@
             this.hintButton.Text = "Hint";
             this.hintButton.UseVisualStyleBackColor = true;
             // 
+            // userLabel
+            // 
+            this.userLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.userLabel.Location = new System.Drawing.Point(12, 336);
+            this.userLabel.Name = "userLabel";
+            this.userLabel.Size = new System.Drawing.Size(135, 24);
+            this.userLabel.TabIndex = 20;
+            this.userLabel.Text = "Enter your number:";
+            this.userLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(6, -4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(155, 36);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "System number:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,7 +296,6 @@
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(814, 501);
             this.Controls.Add(this.hintButton);
-            this.Controls.Add(this.invintation);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.actionsField);
@@ -291,6 +312,9 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkButton);
             this.Controls.Add(this.userNumberBox);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.userLabel);
+            this.Controls.Add(this.invintation);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MinimumSize = new System.Drawing.Size(830, 540);
             this.Name = "MainForm";
@@ -323,6 +347,8 @@
         internal System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Label invintation;
         internal System.Windows.Forms.Button hintButton;
+        private System.Windows.Forms.Label userLabel;
+        private System.Windows.Forms.Label label1;
     }
 }
 

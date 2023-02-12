@@ -1,12 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
 namespace BoolsAndCows
 {
+    internal class ButtonsHandler
+    {
+        private List<Button> buttons;
+        private MainForm mainForm;
+
+        public ButtonsHandler(List<Button> formButtons, MainForm mainForm) 
+        {
+            List<Button> buttons = new List<Button>();
+            foreach (Button button in formButtons)
+            {
+                buttons.Add(button);
+            }
+            this.buttons = buttons;
+            this.mainForm = mainForm;
+        }
+      
+        public void StartButtonHandler()
+        {
+            foreach(Button button in buttons)
+            {
+                button.Click += new EventHandler(mainForm.ButtonClickHandler);
+            }
+        }
+    }
+
     public partial class MainForm : Form
     {
         private GameSession CurrentGameSession { get; } = new GameSession();
@@ -18,23 +43,12 @@ namespace BoolsAndCows
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            startButton.Click += new EventHandler(ButtonClickHandler);
-            delete.Click += new EventHandler(ButtonClickHandler);
-            clear.Click += new EventHandler(ButtonClickHandler);
-            checkButton.Click += new EventHandler(ButtonClickHandler);
-            hintButton.Click += new EventHandler(ButtonClickHandler);
-            button1.Click += new EventHandler(ButtonClickHandler);
-            button2.Click += new EventHandler(ButtonClickHandler);
-            button3.Click += new EventHandler(ButtonClickHandler);
-            button4.Click += new EventHandler(ButtonClickHandler);
-            button5.Click += new EventHandler(ButtonClickHandler);
-            button6.Click += new EventHandler(ButtonClickHandler);
-            button7.Click += new EventHandler(ButtonClickHandler);
-            button8.Click += new EventHandler(ButtonClickHandler);
-            button9.Click += new EventHandler(ButtonClickHandler);
+            List<Button> buttons = this.Controls.OfType<Button>().ToList();
+            ButtonsHandler buttonHandler = new ButtonsHandler(buttons, this);
+            buttonHandler.StartButtonHandler();
         }
 
-        private void ButtonClickHandler(object sender, EventArgs e)
+        public void ButtonClickHandler(object sender, EventArgs e)
         {
             Button button = (Button)sender;
             List<string> buttonNumbersText = new List<string>()
