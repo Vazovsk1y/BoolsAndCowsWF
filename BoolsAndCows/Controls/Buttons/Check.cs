@@ -35,7 +35,9 @@ namespace BoolsAndCows.Controls.Buttons
                 }
                 else
                 {
-                    elementsToInterract.resultLabel.Text += $"Your result:\nSteps spend - {gameSession.StepsCount}";
+                    elementsToInterract.resultLabel.Text += $"Your result:\n" +
+                        $"Steps spend - {gameSession.StepsCount}\n" +
+                        $"Hints used - {gameSession.UsedHintsCount}\n";
                     elementsToInterract.actionsField.Text += "CONGRATULATION, YOU WON!";
                     elementsToInterract.systemNumberBox.Text = string.Empty;
                     gameSession.Stop();

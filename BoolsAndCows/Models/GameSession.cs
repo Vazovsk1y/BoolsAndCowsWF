@@ -12,6 +12,11 @@ namespace BoolsAndCows.Models
         private bool isHintsEnd = false;
         private int stepsCount = 0;
 
+        public int UsedHintsCount
+        {
+            get => usedHintCount;
+        }
+
         public int StepsCount
         {
             get => stepsCount;

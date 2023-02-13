@@ -5,6 +5,10 @@ using BoolsAndCows.Controls.Buttons;
 
 namespace BoolsAndCows
 {
+    /* 
+      In MainForm class we handle all events that occur with this form.
+    */
+
     public partial class MainForm : Form
     {
         public MainForm()
@@ -14,7 +18,8 @@ namespace BoolsAndCows
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            FormButtonsHandler buttonHandler = new FormButtonsHandler(this);   // any button clicks on form will handle by this object.
+            // any button clicks on form will handle by this object method.
+            FormButtonsHandler buttonHandler = new FormButtonsHandler(this);   
             buttonHandler.ProcessButtons();
         }
 

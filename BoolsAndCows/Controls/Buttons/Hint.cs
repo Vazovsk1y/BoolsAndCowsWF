@@ -1,4 +1,5 @@
 ﻿using BoolsAndCows.Models;
+using System.Windows.Forms;
 
 namespace BoolsAndCows.Controls.Buttons
 {
@@ -12,11 +13,17 @@ namespace BoolsAndCows.Controls.Buttons
             {
                 elementsToInterract.actionsField.Text += "You didn't start the new game!\n";
             }
-            else if (gameSession.IsHintsEnd)
+            else if(gameSession.IsHintsEnd)
             {
-                elementsToInterract.actionsField.Text = "You loose! The game is end!\n";
-                elementsToInterract.systemNumberBox.Text = string.Empty;
-                gameSession.Stop();
+                var dialogResult = MessageBox.Show("Are you sure?\nIf you will use last hint you loose.", "Question", 
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (dialogResult == DialogResult.Yes)
+                {
+                    elementsToInterract.actionsField.Text = "You loose! The game is end!\n";
+                    elementsToInterract.systemNumberBox.Text = string.Empty;
+                    gameSession.Stop();
+                }
             }
             else
             {
