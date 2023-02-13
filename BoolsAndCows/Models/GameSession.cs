@@ -1,15 +1,21 @@
 ﻿using System;
 using System.Linq;
 
-namespace BoolsAndCows
+namespace BoolsAndCows.Models
 {
-
     internal class GameSession
     {
         private bool isGameStarted = false;
         private string systemNumber;
+        private const int NumberLength = 4;
         private int usedHintCount = 0;
         private bool isHintsEnd = false;
+        private int stepsCount = 0;
+
+        public int StepsCount
+        {
+            get => stepsCount;
+        }
 
         public bool IsHintsEnd
         {
@@ -33,10 +39,14 @@ namespace BoolsAndCows
 
         private string GenerateSystemNumber()
         {
-            const int NumberLength = 4;
             Random randNumber = new Random();
-
             return string.Join("", Enumerable.Range(1, 9).OrderBy(x => randNumber.Next()).Take(NumberLength));
+        }
+
+        public int IncreaseGameSteps(string userBoxText)
+        {
+            return userBoxText.Where(letter => char.IsLetter(letter) || char.IsSymbol(letter)).Count().Equals(0)
+                && userBoxText.Length.Equals(NumberLength) ? ++stepsCount : stepsCount;
         }
 
         public string GetHint(string currentNumber)
@@ -60,6 +70,7 @@ namespace BoolsAndCows
             isGameStarted = false;
             usedHintCount = 0;
             isHintsEnd = false;
+            stepsCount = 0;
         }
 
         public int GetBoolsCount(string userNumber, string systemNumber)
@@ -75,9 +86,11 @@ namespace BoolsAndCows
         public int GetCowsCount(string userNumber, string systemNumber)
         {
             int count = 0;
-            foreach (var item in systemNumber)
-                if (userNumber.Contains(item))
-                    count++;
+            for (int i = 0; i < systemNumber.Length; i++)
+                for (int j = 0; j < systemNumber.Length; j++)
+                    if (userNumber[i].Equals(systemNumber[j]) && i != j)
+                        count++;
+
             return count;
         }
     }

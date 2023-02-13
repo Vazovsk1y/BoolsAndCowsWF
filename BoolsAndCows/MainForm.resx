@@ -117,4 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="rules.Text" xml:space="preserve">
+    <value>The computer thinks of four different digits from 1,2,3...9. 
+The player makes moves to find out these digits and their order.
+Each move consists of four digits.
+In response, the computer shows the number of the guessed 
+digits in their places (the number of bulls) and the number of 
+the guessed digits not in their places (the number of cows).</value>
+  </data>
 </root>

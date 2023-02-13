@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.userNumberBox = new System.Windows.Forms.TextBox();
             this.checkButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -42,12 +43,15 @@
             this.button9 = new System.Windows.Forms.Button();
             this.delete = new System.Windows.Forms.Button();
             this.actionsField = new System.Windows.Forms.RichTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.systemNumberBox = new System.Windows.Forms.TextBox();
             this.startButton = new System.Windows.Forms.Button();
-            this.invintation = new System.Windows.Forms.Label();
+            this.title = new System.Windows.Forms.Label();
             this.hintButton = new System.Windows.Forms.Button();
             this.userLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.systemNumberLabel = new System.Windows.Forms.Label();
+            this.rules = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.resultLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // userNumberBox
@@ -220,15 +224,15 @@
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(9, 35);
-            this.textBox1.MaximumSize = new System.Drawing.Size(368, 35);
-            this.textBox1.MinimumSize = new System.Drawing.Size(149, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(152, 35);
-            this.textBox1.TabIndex = 16;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.systemNumberBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.systemNumberBox.Location = new System.Drawing.Point(9, 35);
+            this.systemNumberBox.MaximumSize = new System.Drawing.Size(368, 35);
+            this.systemNumberBox.MinimumSize = new System.Drawing.Size(149, 35);
+            this.systemNumberBox.Name = "textBox1";
+            this.systemNumberBox.ReadOnly = true;
+            this.systemNumberBox.Size = new System.Drawing.Size(152, 41);
+            this.systemNumberBox.TabIndex = 16;
+            this.systemNumberBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // startButton
             // 
@@ -243,18 +247,18 @@
             this.startButton.Text = "Start";
             this.startButton.UseVisualStyleBackColor = true;
             // 
-            // invintation
+            // title
             // 
-            this.invintation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.title.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.invintation.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.invintation.Location = new System.Drawing.Point(227, 0);
-            this.invintation.Name = "invintation";
-            this.invintation.Size = new System.Drawing.Size(220, 40);
-            this.invintation.TabIndex = 18;
-            this.invintation.Text = "Bools And Cows";
-            this.invintation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.title.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.title.Location = new System.Drawing.Point(227, 0);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(220, 32);
+            this.title.TabIndex = 18;
+            this.title.Text = "Bools And Cows";
+            this.title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // hintButton
             // 
@@ -279,15 +283,43 @@
             this.userLabel.Text = "Enter your number:";
             this.userLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label1
+            // systemNumberLabel
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(6, -4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 36);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "System number:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.systemNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.systemNumberLabel.Location = new System.Drawing.Point(6, -4);
+            this.systemNumberLabel.Name = "systemNumberLabel";
+            this.systemNumberLabel.Size = new System.Drawing.Size(155, 36);
+            this.systemNumberLabel.TabIndex = 21;
+            this.systemNumberLabel.Text = "System number:";
+            this.systemNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // rules
+            // 
+            this.rules.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rules.Location = new System.Drawing.Point(188, 88);
+            this.rules.Name = "rules";
+            this.rules.Size = new System.Drawing.Size(275, 253);
+            this.rules.TabIndex = 22;
+            this.rules.Text = resources.GetString("rules.Text");
+            this.rules.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(188, 60);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(275, 30);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Rules\r\n";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // resultLabel
+            // 
+            this.resultLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.resultLabel.Location = new System.Drawing.Point(11, 227);
+            this.resultLabel.Name = "resultLabel";
+            this.resultLabel.Size = new System.Drawing.Size(150, 84);
+            this.resultLabel.TabIndex = 24;
             // 
             // MainForm
             // 
@@ -295,9 +327,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(814, 501);
+            this.Controls.Add(this.resultLabel);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.rules);
             this.Controls.Add(this.hintButton);
             this.Controls.Add(this.startButton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.systemNumberBox);
             this.Controls.Add(this.actionsField);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.button9);
@@ -312,9 +347,9 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkButton);
             this.Controls.Add(this.userNumberBox);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.systemNumberLabel);
             this.Controls.Add(this.userLabel);
-            this.Controls.Add(this.invintation);
+            this.Controls.Add(this.title);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MinimumSize = new System.Drawing.Size(830, 540);
             this.Name = "MainForm";
@@ -343,12 +378,15 @@
         internal System.Windows.Forms.Button delete;
         internal System.Windows.Forms.RichTextBox actionsField;
         internal System.Windows.Forms.TextBox userNumberBox;
-        internal System.Windows.Forms.TextBox textBox1;
+        internal System.Windows.Forms.TextBox systemNumberBox;
         internal System.Windows.Forms.Button startButton;
-        private System.Windows.Forms.Label invintation;
+        private System.Windows.Forms.Label title;
         internal System.Windows.Forms.Button hintButton;
         private System.Windows.Forms.Label userLabel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label systemNumberLabel;
+        private System.Windows.Forms.Label rules;
+        private System.Windows.Forms.Label label3;
+        internal System.Windows.Forms.Label resultLabel;
     }
 }
 

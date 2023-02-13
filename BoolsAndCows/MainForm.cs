@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using BoolsAndCows.Controls;
+using BoolsAndCows.Controls.Buttons;
 
 namespace BoolsAndCows
 {
@@ -12,8 +14,8 @@ namespace BoolsAndCows
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            ButtonsHandler buttonHandler = new ButtonsHandler(this);
-            buttonHandler.StartButtonHandler();
+            FormButtonsHandler buttonHandler = new FormButtonsHandler(this);   // any button clicks on form will handle by this object.
+            buttonHandler.ProcessButtons();
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -25,10 +27,6 @@ namespace BoolsAndCows
                 e.Cancel = true;
         }
     }
-
-    // HOW TO HANDLE THE FORM CLOSING WHILE GAME IS PLAYING.
-
-    // WORK ABOUT FORM AND CONTROLS SIZE ALSO COTROLS SCALING DEPEND ON FORM SIZE(solution)
 
     // PLAY WITH FORM GUI
 }
