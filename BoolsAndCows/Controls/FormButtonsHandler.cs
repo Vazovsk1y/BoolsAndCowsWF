@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using BoolsAndCows.Controls.Buttons;
-using BoolsAndCows;
 using BoolsAndCows.Models;
 
 namespace BoolsAndCows.Controls
