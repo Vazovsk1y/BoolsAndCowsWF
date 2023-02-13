@@ -1,7 +1,7 @@
-﻿using BoolsAndCows.Models;
+﻿using BoolsAndCows.Presenter;
 using System.Windows.Forms;
 
-namespace BoolsAndCows.Controls.Buttons
+namespace BoolsAndCows.Presenter.Buttons
 {
     internal class Hint : GameButtonHandler, IGameButtonHandler
     {

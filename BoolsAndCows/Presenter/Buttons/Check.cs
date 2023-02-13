@@ -1,7 +1,6 @@
 ﻿using System.Linq;
-using BoolsAndCows.Models;
 
-namespace BoolsAndCows.Controls.Buttons
+namespace BoolsAndCows.Presenter.Buttons
 {
     internal class Check : GameButtonHandler, IGameButtonHandler
     {

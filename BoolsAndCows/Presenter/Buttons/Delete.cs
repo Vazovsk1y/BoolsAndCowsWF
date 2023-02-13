@@ -1,6 +1,6 @@
-﻿using BoolsAndCows.Models;
+﻿using BoolsAndCows.Presenter;
 
-namespace BoolsAndCows.Controls.Buttons
+namespace BoolsAndCows.Presenter.Buttons
 {
     internal class Delete : GameButtonHandler, IGameButtonHandler
     {

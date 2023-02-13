@@ -46,13 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\Buttons\Start.cs" />
-    <Compile Include="Controls\Buttons\Hint.cs" />
-    <Compile Include="Controls\Buttons\Clear.cs" />
-    <Compile Include="Controls\Buttons\Delete.cs" />
-    <Compile Include="Controls\Buttons\Check.cs" />
-    <Compile Include="Controls\Buttons\GameNumbersKeyboard.cs" />
-    <Compile Include="Controls\FormButtonsHandler.cs" />
+    <Compile Include="Presenter\Buttons\Start.cs" />
+    <Compile Include="Presenter\Buttons\Hint.cs" />
+    <Compile Include="Presenter\Buttons\Clear.cs" />
+    <Compile Include="Presenter\Buttons\Delete.cs" />
+    <Compile Include="Presenter\Buttons\Check.cs" />
+    <Compile Include="Presenter\Buttons\GameNumbersKeyboard.cs" />
+    <Compile Include="Presenter\FormButtonsHandler.cs" />
     <Compile Include="Models\GameButtonHandler.cs" />
     <Compile Include="Models\GameSession.cs" />
     <Compile Include="View\MainForm.cs">

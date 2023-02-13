@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace BoolsAndCows.Models
+namespace BoolsAndCows.Presenter
 {
     internal class GameSession
     {

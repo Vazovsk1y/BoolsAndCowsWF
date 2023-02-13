@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using BoolsAndCows.Controls;
-using BoolsAndCows.Controls.Buttons;
+using BoolsAndCows.Presenter;
 
 namespace BoolsAndCows
 {
@@ -34,4 +33,7 @@ namespace BoolsAndCows
     }
 
     // PLAY WITH FORM GUI
+
+    // PUSH ON GIT 
+    // PUSH ON STACK OVERFLOW
 }

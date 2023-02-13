@@ -1,5 +1,5 @@
 ﻿
-namespace BoolsAndCows.Controls.Buttons
+namespace BoolsAndCows.Presenter.Buttons
 {
     internal class GameNumbersKeyboard 
     {

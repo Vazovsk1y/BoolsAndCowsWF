@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using BoolsAndCows.Controls.Buttons;
-using BoolsAndCows.Models;
+using BoolsAndCows.Presenter;
+using BoolsAndCows.Presenter.Buttons;
 
-namespace BoolsAndCows.Controls
+namespace BoolsAndCows.Presenter
 {
     internal class FormButtonsHandler
     {
