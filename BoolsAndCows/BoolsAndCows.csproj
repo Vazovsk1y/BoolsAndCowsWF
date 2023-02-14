@@ -52,7 +52,7 @@
     <Compile Include="Presenter\Buttons\Delete.cs" />
     <Compile Include="Presenter\Buttons\Check.cs" />
     <Compile Include="Presenter\Buttons\GameNumbersKeyboard.cs" />
-    <Compile Include="Presenter\FormButtonsHandler.cs" />
+    <Compile Include="Presenter\FormEventsHandler.cs" />
     <Compile Include="Models\GameButtonHandler.cs" />
     <Compile Include="Models\GameSession.cs" />
     <Compile Include="View\MainForm.cs">

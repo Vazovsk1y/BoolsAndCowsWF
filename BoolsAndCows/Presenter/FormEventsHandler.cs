@@ -6,23 +6,40 @@ using BoolsAndCows.Presenter.Buttons;
 
 namespace BoolsAndCows.Presenter
 {
-    internal class FormButtonsHandler
+    internal class FormEventsHandler
     {
         private GameSession GameSession { get; } = new GameSession();
         private List<Button> Buttons { get; }
         private MainForm ElementsToInterract { get; }
 
-        public FormButtonsHandler(MainForm mainForm)
+        public FormEventsHandler(MainForm mainForm)
         {
             Buttons = mainForm.Controls.OfType<Button>().ToList();
             ElementsToInterract = mainForm;
         }
 
-        public void ProcessButtons()
+        public void StartProcessButtons()
         {
             foreach (Button button in Buttons)
             {
                 button.Click += new EventHandler(ButtonClickHandler);
+            }
+        }
+
+        public void StartProcessFormClosing()
+        {
+            ElementsToInterract.FormClosing += new FormClosingEventHandler(FormClosingHandler);
+        }
+
+        private void FormClosingHandler(object sender, FormClosingEventArgs e)
+        {
+            if(GameSession.IsGameStarted)
+            {
+                DialogResult dialogResult = MessageBox.Show("Game is not ending.\nAre you sure that want to quit?\n",
+                     "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (dialogResult.Equals(DialogResult.No))
+                    e.Cancel = true;
             }
         }
 
