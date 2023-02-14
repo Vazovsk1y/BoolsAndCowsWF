@@ -46,6 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\Animations\Animation.cs" />
+    <Compile Include="Components\Animations\Animator.cs" />
+    <Compile Include="Components\ClearGUI.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ThemeSwitchGUI.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Presenter\Buttons\Start.cs" />
     <Compile Include="Presenter\Buttons\Hint.cs" />
     <Compile Include="Presenter\Buttons\Clear.cs" />
@@ -75,6 +83,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
