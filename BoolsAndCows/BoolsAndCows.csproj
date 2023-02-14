@@ -48,9 +48,10 @@
   <ItemGroup>
     <Compile Include="Components\Animations\Animation.cs" />
     <Compile Include="Components\Animations\Animator.cs" />
-    <Compile Include="Components\ClearGUI.cs">
+    <Compile Include="Components\RoundButtonGUI.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Components\Instruments\RoundRectangleDrawer.cs" />
     <Compile Include="Components\ThemeSwitchGUI.cs">
       <SubType>Component</SubType>
     </Compile>

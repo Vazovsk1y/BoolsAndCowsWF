@@ -55,6 +55,7 @@ namespace BoolsAndCows
             this.label3 = new System.Windows.Forms.Label();
             this.resultLabel = new System.Windows.Forms.Label();
             this.themeSwitchGUI1 = new BoolsAndCows.Components.ThemeSwitchGUI();
+            this.clearGUI1 = new BoolsAndCows.Components.RoundButtonGUI();
             this.SuspendLayout();
             // 
             // userNumberBox
@@ -330,11 +331,22 @@ namespace BoolsAndCows
             // 
             this.themeSwitchGUI1.BackColor = System.Drawing.Color.White;
             this.themeSwitchGUI1.Font = new System.Drawing.Font("Verdana", 9F);
-            this.themeSwitchGUI1.Location = new System.Drawing.Point(15, 543);
+            this.themeSwitchGUI1.Location = new System.Drawing.Point(870, 336);
             this.themeSwitchGUI1.Name = "themeSwitchGUI1";
-            this.themeSwitchGUI1.Size = new System.Drawing.Size(97, 37);
+            this.themeSwitchGUI1.Size = new System.Drawing.Size(89, 41);
             this.themeSwitchGUI1.TabIndex = 25;
             this.themeSwitchGUI1.Text = "themeSwitchGUI1";
+            // 
+            // clearGUI1
+            // 
+            this.clearGUI1.BackColor = System.Drawing.Color.Tomato;
+            this.clearGUI1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.clearGUI1.ForeColor = System.Drawing.Color.White;
+            this.clearGUI1.Location = new System.Drawing.Point(797, 243);
+            this.clearGUI1.Name = "clearGUI1";
+            this.clearGUI1.Size = new System.Drawing.Size(234, 68);
+            this.clearGUI1.TabIndex = 26;
+            this.clearGUI1.Text = "Enter";
             // 
             // MainForm
             // 
@@ -342,6 +354,7 @@ namespace BoolsAndCows
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1079, 592);
+            this.Controls.Add(this.clearGUI1);
             this.Controls.Add(this.themeSwitchGUI1);
             this.Controls.Add(this.resultLabel);
             this.Controls.Add(this.label3);
@@ -403,6 +416,7 @@ namespace BoolsAndCows
         private System.Windows.Forms.Label label3;
         internal System.Windows.Forms.Label resultLabel;
         private ThemeSwitchGUI themeSwitchGUI1;
+        private RoundButtonGUI clearGUI1;
     }
 }
 

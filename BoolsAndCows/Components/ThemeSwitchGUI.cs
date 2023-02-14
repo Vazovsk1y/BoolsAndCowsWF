@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System;
 using BoolsAndCows.Components.Animations;
+using BoolsAndCows.Components.Instruments;
 
 namespace BoolsAndCows.Components
 {
@@ -56,7 +57,7 @@ namespace BoolsAndCows.Components
             Pen pen = new Pen(Color.DarkGray, 3);
             Pen penToggle = new Pen(Color.DarkGray, 3);
 
-            GraphicsPath rectanglePath = RoundRectangle(phoneRectangle, phoneRectangle.Height);
+            GraphicsPath rectanglePath = RoundRectangleDrawer.RoundRectangle(phoneRectangle, phoneRectangle.Height);
 
             Rectangle rectangleToggle = new Rectangle((int)ToggleAnimation.Value, phoneRectangle.Y, phoneRectangle.Height, phoneRectangle.Height);
             graphics.DrawPath(pen, rectanglePath);
@@ -105,19 +106,5 @@ namespace BoolsAndCows.Components
             ToggleAnimation.StepDivider = 6;          // animation speed
             Animator.Request(ToggleAnimation, true);
         }
-
-        private GraphicsPath RoundRectangle(Rectangle rect, int RoundSize)
-        {
-            GraphicsPath graphicsPath = new GraphicsPath();
-
-            graphicsPath.AddArc(rect.X, rect.Y, RoundSize, RoundSize, 180, 90); // left up angle
-            graphicsPath.AddArc(rect.X + rect.Width - RoundSize, rect.Y, RoundSize,RoundSize, 270, 90); // right up angle
-
-            graphicsPath.AddArc(rect.X + rect.Width - RoundSize, rect.Y + rect.Height - RoundSize, RoundSize, RoundSize, 0, 90); // right down angle
-            graphicsPath.AddArc(rect.X, rect.Y + rect.Height - RoundSize, RoundSize, RoundSize, 90, 90); // left down angle
-
-            graphicsPath.CloseFigure();
-            return graphicsPath;
-        } 
     }
 }
