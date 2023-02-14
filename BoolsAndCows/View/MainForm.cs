@@ -11,6 +11,8 @@ namespace BoolsAndCows
 
     public partial class MainForm : Form
     {
+        private FormEventsHandler eventsHandler;
+
         public MainForm()
         {
             InitializeComponent();
@@ -18,14 +20,13 @@ namespace BoolsAndCows
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            // any button clicks on form will handle by this object method.
-            FormEventsHandler eventsHandler = new FormEventsHandler(this);
-            eventsHandler.StartProcessButtons();
+            // any event that occurs with form will handle by this apropriate object method.
+            eventsHandler = new FormEventsHandler(this);
+            eventsHandler.StartProcessButtonsClicks();
             eventsHandler.StartProcessFormClosing();
+            eventsHandler.StartProcessKeysClick();
         }
     }
-
-    // PLAY WITH FORM GUI
     // PUSH ON GIT 
     // PUSH ON STACK OVERFLOW
 }

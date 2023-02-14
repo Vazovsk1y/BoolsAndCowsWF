@@ -222,13 +222,13 @@
             this.actionsField.TabIndex = 15;
             this.actionsField.Text = "";
             // 
-            // textBox1
+            // systemNumberBox
             // 
             this.systemNumberBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.systemNumberBox.Location = new System.Drawing.Point(9, 35);
             this.systemNumberBox.MaximumSize = new System.Drawing.Size(368, 35);
             this.systemNumberBox.MinimumSize = new System.Drawing.Size(149, 35);
-            this.systemNumberBox.Name = "textBox1";
+            this.systemNumberBox.Name = "systemNumberBox";
             this.systemNumberBox.ReadOnly = true;
             this.systemNumberBox.Size = new System.Drawing.Size(152, 41);
             this.systemNumberBox.TabIndex = 16;
