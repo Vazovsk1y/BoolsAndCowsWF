@@ -5,8 +5,7 @@ using BoolsAndCows.Presenter;
 namespace BoolsAndCows
 {
     /* 
-      In MainForm class we dont't handle all events that occur with this form, it happens in Presenters Classes 
-      with Models classes. So View and Model are not interacting between each other directly, only by Presenter.
+      In MainForm class we handle all events that occur with this form.
     */
 
     public partial class MainForm : Form
@@ -33,6 +32,8 @@ namespace BoolsAndCows
         }
     }
 
+    // SHOW INTERACT BETWEEN THE PARTS
+    // MAKE SOME CHANGES IN PRESENTER
     // PLAY WITH FORM GUI
     // PUSH ON GIT 
     // PUSH ON STACK OVERFLOW

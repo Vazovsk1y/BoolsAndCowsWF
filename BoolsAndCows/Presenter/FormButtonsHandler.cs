@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using BoolsAndCows.Presenter;
 using BoolsAndCows.Presenter.Buttons;
 
 namespace BoolsAndCows.Presenter
