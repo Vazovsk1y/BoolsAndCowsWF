@@ -18,7 +18,14 @@ namespace BoolsAndCows.Presenter
             ElementsToInterract = mainForm;
         }
 
-        public void StartProcessButtons()
+        public void StartProcessKeysClick()
+        {
+            ElementsToInterract.KeyPreview = true;
+            ElementsToInterract.KeyDown += new KeyEventHandler(KeysDownProcess);
+            ElementsToInterract.KeyPress += ElementsToInterract_KeyPress;
+        }
+
+        public void StartProcessButtonsClicks()
         {
             foreach (Button button in Buttons)
             {
@@ -29,6 +36,23 @@ namespace BoolsAndCows.Presenter
         public void StartProcessFormClosing()
         {
             ElementsToInterract.FormClosing += new FormClosingEventHandler(FormClosingHandler);
+        }
+
+        private void ElementsToInterract_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void KeysDownProcess(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.Equals(Keys.Enter))
+            {
+                ElementsToInterract.checkButton.PerformClick();
+                e.Handled = true;
+            }
         }
 
         private void FormClosingHandler(object sender, FormClosingEventArgs e)
