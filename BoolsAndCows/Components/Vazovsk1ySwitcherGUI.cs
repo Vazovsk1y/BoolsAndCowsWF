@@ -4,19 +4,56 @@ using System.Drawing.Drawing2D;
 using System;
 using BoolsAndCows.Components.Animations;
 using BoolsAndCows.Components.Instruments;
+using System.ComponentModel;
 
 namespace BoolsAndCows.Components
 {
-    public class ThemeSwitchGUI : Control
+    public class Vazovsk1ySwitcherGUI : Control
     {
+        #region --Fields--
+
+        private int animationSpeed = 1;
         private Rectangle phoneRectangle;  // main rectangle
-        int TogglePosX_ON;                 // right
-        int TogglePosX_OFF;                // left
+        int TogglePosX_ON;                 // right point toggle
+        int TogglePosX_OFF;                // left point toggle
         Animation ToggleAnimation;
         private bool IsSwitched { get; set; } = false;
-        private Color BackColorON { get; set; } = Color.Red;
+        private Color backColorON { get; set; } = Color.Red;
+        private Color backColorOFF { get; set; } = Color.Red;
 
-        public ThemeSwitchGUI()
+        #endregion
+
+        #region --Properties--
+
+        [Browsable(true)]
+        [Category("Appearance")]
+        [Description("Back color when ON")]
+        public int AnimationSpeed
+        {
+            get => animationSpeed;
+            set
+            {
+                if (value <= 20 && value >= 1)
+                    animationSpeed = value;
+                Invalidate();
+            }
+        }
+
+        [Browsable(true)]
+        [Category("Appearance")]
+        [Description("Back color when ON")]
+        public Color BackColorON
+        { get => backColorON; set { backColorON = value; Invalidate(); } }
+
+        [Browsable(true)]
+        [Category("Appearance")]
+        [Description("Back color when OFF")]
+        public Color BackColorOFF
+        { get => backColorOFF; set { backColorOFF = value; Invalidate(); } }
+
+        #endregion
+
+        public Vazovsk1ySwitcherGUI()
         {
             // for optimizing drawing
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.ResizeRedraw
@@ -62,7 +99,7 @@ namespace BoolsAndCows.Components
             Rectangle rectangleToggle = new Rectangle((int)ToggleAnimation.Value, phoneRectangle.Y, phoneRectangle.Height, phoneRectangle.Height);
             graphics.DrawPath(pen, rectanglePath);
 
-            if (IsSwitched.Equals(true))
+            if (IsSwitched)
             {
                 if (!Animator.IsWork)
                 {
@@ -76,7 +113,7 @@ namespace BoolsAndCows.Components
                 {
                     rectangleToggle.Location = new Point(TogglePosX_OFF, phoneRectangle.Y);
                 }
-                graphics.FillPath(new SolidBrush(BackColor), rectanglePath);
+                graphics.FillPath(new SolidBrush(BackColorOFF), rectanglePath);
             }
 
             graphics.DrawEllipse(penToggle, rectangleToggle);
@@ -103,7 +140,7 @@ namespace BoolsAndCows.Components
             }
 
             IsSwitched = !IsSwitched;
-            ToggleAnimation.StepDivider = 6;          // animation speed
+            ToggleAnimation.StepDivider = AnimationSpeed;          // animation speed
             Animator.Request(ToggleAnimation, true);
         }
     }

@@ -48,11 +48,11 @@
   <ItemGroup>
     <Compile Include="Components\Animations\Animation.cs" />
     <Compile Include="Components\Animations\Animator.cs" />
-    <Compile Include="Components\RoundButtonGUI.cs">
+    <Compile Include="Components\Vazovsk1yButtonGUI.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Components\Instruments\RoundRectangleDrawer.cs" />
-    <Compile Include="Components\ThemeSwitchGUI.cs">
+    <Compile Include="Components\Vazovsk1ySwitcherGUI.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Presenter\Buttons\Start.cs" />
