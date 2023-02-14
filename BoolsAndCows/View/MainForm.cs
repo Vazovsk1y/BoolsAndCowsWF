@@ -32,8 +32,9 @@ namespace BoolsAndCows
         }
     }
 
+    // SHOW INTERACT BETWEEN THE PARTS
+    // MAKE SOME CHANGES IN PRESENTER
     // PLAY WITH FORM GUI
-
     // PUSH ON GIT 
     // PUSH ON STACK OVERFLOW
 }
