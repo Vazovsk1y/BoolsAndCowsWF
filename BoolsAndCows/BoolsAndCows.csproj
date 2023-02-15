@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="Components\Animations\Animation.cs" />
     <Compile Include="Components\Animations\Animator.cs" />
+    <Compile Include="Components\VazovskiyTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\VazovskiyTextBox.Designer.cs">
+      <DependentUpon>VazovskiyTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\Vazovsk1yButtonGUI.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     <Compile Include="Models\IGameButtonHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Components\VazovskiyTextBox.resx">
+      <DependentUpon>VazovskiyTextBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
