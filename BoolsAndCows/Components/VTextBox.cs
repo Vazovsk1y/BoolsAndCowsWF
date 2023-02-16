@@ -7,7 +7,7 @@ using System.Windows.Forms;
 namespace BoolsAndCows.Components
 {
     [DefaultEvent("_TextChanged")]
-    public partial class VazovskiyTextBox : UserControl
+    public partial class VTextBox : UserControl
     {
         #region --EventWithTextBox--
         //Default Event
@@ -70,7 +70,7 @@ namespace BoolsAndCows.Components
         #endregion
 
         #region --Constructor--
-        public VazovskiyTextBox()
+        public VTextBox()
         {
             InitializeComponent();
         }

@@ -55,17 +55,17 @@
       <DependentUpon>VRichTextBox.cs</DependentUpon>
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Components\VazovskiyTextBox.cs">
+    <Compile Include="Components\VTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Components\VazovskiyTextBox.Designer.cs">
-      <DependentUpon>VazovskiyTextBox.cs</DependentUpon>
+    <Compile Include="Components\VTextBox.Designer.cs">
+      <DependentUpon>VTextBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Components\Vazovsk1yButtonGUI.cs">
+    <Compile Include="Components\VButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Components\Instruments\RoundRectangleDrawer.cs" />
-    <Compile Include="Components\Vazovsk1ySwitcherGUI.cs">
+    <Compile Include="Components\VSwitcher.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Presenter\Buttons\Start.cs" />
@@ -89,8 +89,8 @@
     <EmbeddedResource Include="Components\VRichTextBox.resx">
       <DependentUpon>VRichTextBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Components\VazovskiyTextBox.resx">
-      <DependentUpon>VazovskiyTextBox.cs</DependentUpon>
+    <EmbeddedResource Include="Components\VTextBox.resx">
+      <DependentUpon>VTextBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

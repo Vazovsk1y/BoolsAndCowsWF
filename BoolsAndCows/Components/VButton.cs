@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace BoolsAndCows.Components
 {
-    public class Vazovsk1yButtonGUI : Button
+    public class VButton : Button
     {
         #region --Fields--
 
@@ -148,7 +148,7 @@ namespace BoolsAndCows.Components
 
         #region --Constructors--
 
-        public Vazovsk1yButtonGUI() 
+        public VButton() 
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer 
                 | ControlStyles.ResizeRedraw 

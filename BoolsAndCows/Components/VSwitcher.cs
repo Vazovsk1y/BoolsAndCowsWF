@@ -8,7 +8,7 @@ using System.ComponentModel;
 
 namespace BoolsAndCows.Components
 {
-    public class Vazovsk1ySwitcherGUI : Control
+    public class VSwitcher : Control
     {
         #region --Fields--
 
@@ -53,7 +53,7 @@ namespace BoolsAndCows.Components
 
         #endregion
 
-        public Vazovsk1ySwitcherGUI()
+        public VSwitcher()
         {
             // for optimizing drawing
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.ResizeRedraw
