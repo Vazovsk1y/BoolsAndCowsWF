@@ -48,6 +48,9 @@
   <ItemGroup>
     <Compile Include="Components\Animations\Animation.cs" />
     <Compile Include="Components\Animations\Animator.cs" />
+    <Compile Include="Components\VLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Components\VRichTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>

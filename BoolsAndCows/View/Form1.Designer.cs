@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -38,7 +39,6 @@
             this.vButton2 = new BoolsAndCows.Components.VButton();
             this.vRichTextBox2 = new BoolsAndCows.Components.VRichTextBox();
             this.vSwitcher1 = new BoolsAndCows.Components.VSwitcher();
-            this.vRichTextBox3 = new BoolsAndCows.Components.VRichTextBox();
             this.vButton14 = new BoolsAndCows.Components.VButton();
             this.vButton13 = new BoolsAndCows.Components.VButton();
             this.vButton12 = new BoolsAndCows.Components.VButton();
@@ -55,6 +55,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.vLabel1 = new BoolsAndCows.Components.VLabel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.vLabel2 = new BoolsAndCows.Components.VLabel();
+            this.vLabel3 = new BoolsAndCows.Components.VLabel();
+            this.vLabel4 = new BoolsAndCows.Components.VLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -223,27 +228,6 @@
             this.vSwitcher1.TabIndex = 17;
             this.vSwitcher1.Text = "vSwitcher1";
             // 
-            // vRichTextBox3
-            // 
-            this.vRichTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.vRichTextBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.vRichTextBox3.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.vRichTextBox3.BorderSize = 2;
-            this.vRichTextBox3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vRichTextBox3.ForeColor = System.Drawing.Color.White;
-            this.vRichTextBox3.IsReadOnly = true;
-            this.vRichTextBox3.Location = new System.Drawing.Point(12, 158);
-            this.vRichTextBox3.Multiline = false;
-            this.vRichTextBox3.Name = "vRichTextBox3";
-            this.vRichTextBox3.Padding = new System.Windows.Forms.Padding(7);
-            this.vRichTextBox3.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.vRichTextBox3.PlaceholderText = "";
-            this.vRichTextBox3.RoundingDegree = 20;
-            this.vRichTextBox3.Size = new System.Drawing.Size(159, 55);
-            this.vRichTextBox3.TabIndex = 16;
-            this.vRichTextBox3.Texts = "";
-            this.vRichTextBox3.UnderlinedStyle = false;
-            // 
             // vButton14
             // 
             this.vButton14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
@@ -270,6 +254,7 @@
             // 
             this.vButton13.ButtonOutlineColor = System.Drawing.Color.Empty;
             this.vButton13.FirstColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(122)))), ((int)(((byte)(201)))));
+            this.vButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.vButton13.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.vButton13.ForeColor = System.Drawing.Color.White;
             this.vButton13.GradientAngle = 30F;
@@ -291,6 +276,7 @@
             // 
             this.vButton12.ButtonOutlineColor = System.Drawing.Color.Empty;
             this.vButton12.FirstColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(12)))));
+            this.vButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.vButton12.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vButton12.ForeColor = System.Drawing.Color.White;
             this.vButton12.GradientAngle = 30F;
@@ -466,6 +452,7 @@
             // 
             this.vButton1.ButtonOutlineColor = System.Drawing.Color.Empty;
             this.vButton1.FirstColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(177)))), ((int)(((byte)(37)))));
+            this.vButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.vButton1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.vButton1.GradientAngle = 30F;
@@ -499,7 +486,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(32, 134);
+            this.label2.Location = new System.Drawing.Point(8, 134);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 21);
             this.label2.TabIndex = 29;
@@ -522,7 +509,7 @@
             // 
             this.label4.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(361, 1);
+            this.label4.Location = new System.Drawing.Point(345, 33);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(260, 44);
             this.label4.TabIndex = 31;
@@ -540,6 +527,94 @@
             this.label5.Text = "Actions:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // vLabel1
+            // 
+            this.vLabel1.ButtonOutlineColor = System.Drawing.Color.Empty;
+            this.vLabel1.FirstColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.vLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vLabel1.ForeColor = System.Drawing.Color.White;
+            this.vLabel1.GradientAngle = 131F;
+            this.vLabel1.GradientEnable = true;
+            this.vLabel1.IsAnimationEnable = true;
+            this.vLabel1.Location = new System.Drawing.Point(242, 158);
+            this.vLabel1.Name = "vLabel1";
+            this.vLabel1.Rounding = 20;
+            this.vLabel1.RoundingEnable = true;
+            this.vLabel1.SecondColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.vLabel1.Size = new System.Drawing.Size(265, 242);
+            this.vLabel1.TabIndex = 33;
+            this.vLabel1.Text = resources.GetString("vLabel1.Text");
+            this.vLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(259, 134);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 21);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "Rules:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // vLabel2
+            // 
+            this.vLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.vLabel2.ButtonOutlineColor = System.Drawing.Color.Empty;
+            this.vLabel2.FirstColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.vLabel2.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vLabel2.ForeColor = System.Drawing.Color.White;
+            this.vLabel2.GradientAngle = 200F;
+            this.vLabel2.GradientEnable = true;
+            this.vLabel2.IsAnimationEnable = true;
+            this.vLabel2.Location = new System.Drawing.Point(12, 158);
+            this.vLabel2.Name = "vLabel2";
+            this.vLabel2.Rounding = 60;
+            this.vLabel2.RoundingEnable = true;
+            this.vLabel2.SecondColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
+            this.vLabel2.Size = new System.Drawing.Size(159, 59);
+            this.vLabel2.TabIndex = 35;
+            this.vLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // vLabel3
+            // 
+            this.vLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.vLabel3.ButtonOutlineColor = System.Drawing.Color.Empty;
+            this.vLabel3.FirstColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.vLabel3.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vLabel3.ForeColor = System.Drawing.Color.White;
+            this.vLabel3.GradientAngle = 72F;
+            this.vLabel3.GradientEnable = true;
+            this.vLabel3.IsAnimationEnable = true;
+            this.vLabel3.Location = new System.Drawing.Point(-5, 89);
+            this.vLabel3.Name = "vLabel3";
+            this.vLabel3.Rounding = 60;
+            this.vLabel3.RoundingEnable = true;
+            this.vLabel3.SecondColor = System.Drawing.Color.Blue;
+            this.vLabel3.Size = new System.Drawing.Size(940, 20);
+            this.vLabel3.TabIndex = 36;
+            this.vLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // vLabel4
+            // 
+            this.vLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.vLabel4.ButtonOutlineColor = System.Drawing.Color.Empty;
+            this.vLabel4.FirstColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.vLabel4.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vLabel4.ForeColor = System.Drawing.Color.White;
+            this.vLabel4.GradientAngle = 21F;
+            this.vLabel4.GradientEnable = true;
+            this.vLabel4.IsAnimationEnable = true;
+            this.vLabel4.Location = new System.Drawing.Point(89, 1);
+            this.vLabel4.Name = "vLabel4";
+            this.vLabel4.Rounding = 60;
+            this.vLabel4.RoundingEnable = true;
+            this.vLabel4.SecondColor = System.Drawing.Color.Blue;
+            this.vLabel4.Size = new System.Drawing.Size(756, 20);
+            this.vLabel4.TabIndex = 37;
+            this.vLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -547,6 +622,11 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.ClientSize = new System.Drawing.Size(934, 611);
+            this.Controls.Add(this.vLabel4);
+            this.Controls.Add(this.vLabel3);
+            this.Controls.Add(this.vLabel2);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.vLabel1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -562,7 +642,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.vRichTextBox2);
             this.Controls.Add(this.vSwitcher1);
-            this.Controls.Add(this.vRichTextBox3);
             this.Controls.Add(this.vButton14);
             this.Controls.Add(this.vButton13);
             this.Controls.Add(this.vButton12);
@@ -602,7 +681,6 @@
         private Components.VButton vButton12;
         private Components.VButton vButton13;
         private Components.VButton vButton14;
-        private Components.VRichTextBox vRichTextBox3;
         private Components.VSwitcher vSwitcher1;
         private Components.VRichTextBox vRichTextBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -618,5 +696,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private Components.VLabel vLabel1;
+        private System.Windows.Forms.Label label6;
+        private Components.VLabel vLabel2;
+        private Components.VLabel vLabel3;
+        private Components.VLabel vLabel4;
     }
 }
