@@ -40,11 +40,11 @@
             this.textBox1.Size = new System.Drawing.Size(236, 13);
             this.textBox1.TabIndex = 0;
             // 
-            // VazovskiyTextBox
+            // VTextBox
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.textBox1);
-            this.Name = "VazovskiyTextBox";
+            this.Name = "VTextBox";
             this.Padding = new System.Windows.Forms.Padding(7);
             this.Size = new System.Drawing.Size(250, 30);
             this.ResumeLayout(false);
@@ -54,6 +54,6 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        internal System.Windows.Forms.TextBox textBox1;
     }
 }

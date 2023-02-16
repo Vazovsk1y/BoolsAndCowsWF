@@ -80,12 +80,6 @@
     <Compile Include="Presenter\FormEventsHandler.cs" />
     <Compile Include="Models\GameButtonHandler.cs" />
     <Compile Include="Models\GameSession.cs" />
-    <Compile Include="View\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,9 +94,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\VTextBox.resx">
       <DependentUpon>VTextBox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

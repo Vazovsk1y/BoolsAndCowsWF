@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using BoolsAndCows.Presenter.Buttons;
+using BoolsAndCows.View;
+
 
 namespace BoolsAndCows.Presenter
 {
+    // диспетчерский класс который отвечает за вызов нужного инструмента для обработки события.
+
     internal class FormEventsHandler
     {
         private GameSession GameSession { get; } = new GameSession();
@@ -27,6 +31,7 @@ namespace BoolsAndCows.Presenter
 
         public void StartProcessButtonsClicks()
         {
+            // subscribing all buttons on Click event.
             foreach (Button button in Buttons)
             {
                 button.Click += new EventHandler(ButtonClickHandler);
@@ -40,6 +45,7 @@ namespace BoolsAndCows.Presenter
 
         private void ElementsToInterract_KeyPress(object sender, KeyPressEventArgs e)
         {
+            // removing system sound
             if (e.KeyChar == (char)Keys.Enter)
             {
                 e.Handled = true;
@@ -86,10 +92,10 @@ namespace BoolsAndCows.Presenter
             var gameButtons = new Dictionary<string, IGameButtonHandler>()
             {
                 {"Start", new Start(ElementsToInterract, GameSession)},
-                {"Hint" , new Hint(ElementsToInterract, GameSession)},
+                {"?" , new Hint(ElementsToInterract, GameSession)},
                 {"Clear", new  Clear(ElementsToInterract, GameSession) },
                 {"<=", new  Delete(ElementsToInterract, GameSession)},
-                { "Check", new Check(ElementsToInterract, GameSession) }
+                { "Enter", new Check(ElementsToInterract, GameSession) }
             };
 
             foreach (var item in gameButtons)

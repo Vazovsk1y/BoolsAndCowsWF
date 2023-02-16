@@ -41,11 +41,11 @@
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
-            // UserControl1
+            // VRichTextBox
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.richTextBox1);
-            this.Name = "UserControl1";
+            this.Name = "VRichTextBox";
             this.Padding = new System.Windows.Forms.Padding(7);
             this.Size = new System.Drawing.Size(357, 125);
             this.ResumeLayout(false);
@@ -54,6 +54,6 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        internal System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
