@@ -1,4 +1,4 @@
-﻿using BoolsAndCows.Presenter;
+﻿using BoolsAndCows.View;
 
 namespace BoolsAndCows.Presenter.Buttons
 {
@@ -8,10 +8,10 @@ namespace BoolsAndCows.Presenter.Buttons
 
         public void ProcessButtonClick()
         {
-            if (elementsToInterract.userNumberBox.Text.Equals(string.Empty))
+            if (elementsToInterract.userNumberBox.textBox1.Text.Equals(string.Empty))
                 return;
-            elementsToInterract.userNumberBox.Text = elementsToInterract.userNumberBox.Text.Remove(elementsToInterract.userNumberBox.Text.Length - 1, 1);
-            elementsToInterract.userNumberBox.SelectionStart = elementsToInterract.userNumberBox.Text.Length;
+            elementsToInterract.userNumberBox.textBox1.Text = elementsToInterract.userNumberBox.textBox1.Text.Remove(elementsToInterract.userNumberBox.textBox1.Text.Length - 1, 1);
+            elementsToInterract.userNumberBox.textBox1.SelectionStart = elementsToInterract.userNumberBox.textBox1.Text.Length;
         }
     }
 }
