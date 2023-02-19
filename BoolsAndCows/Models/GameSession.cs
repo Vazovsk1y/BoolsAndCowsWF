@@ -1,16 +1,23 @@
 ﻿using System;
 using System.Linq;
+using BoolsAndCows.View;
 
 namespace BoolsAndCows.Presenter
 {
     internal class GameSession
     {
+        #region --Fields--
+
         private bool isGameStarted = false;
         private string systemNumber;
         private const int NumberLength = 4;
         private int usedHintCount = 0;
         private bool isHintsEnd = false;
         private int stepsCount = 0;
+
+        #endregion
+
+        #region --Properties--
 
         public int UsedHintsCount
         {
@@ -41,6 +48,8 @@ namespace BoolsAndCows.Presenter
         {
             get => systemNumber;
         }
+
+        #endregion
 
         private string GenerateSystemNumber()
         {

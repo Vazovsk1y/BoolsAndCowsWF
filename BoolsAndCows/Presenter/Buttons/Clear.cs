@@ -1,4 +1,4 @@
-﻿using BoolsAndCows.Presenter;
+﻿using BoolsAndCows.View;
 
 namespace BoolsAndCows.Presenter.Buttons
 {
@@ -8,7 +8,7 @@ namespace BoolsAndCows.Presenter.Buttons
 
         public void ProcessButtonClick()
         {
-            elementsToInterract.userNumberBox.Text = string.Empty;
+            elementsToInterract.userNumberBox.Texts = string.Empty;
         }
     }
 }

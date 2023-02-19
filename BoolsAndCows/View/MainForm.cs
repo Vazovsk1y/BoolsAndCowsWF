@@ -1,14 +1,9 @@
-﻿using System;
+﻿using BoolsAndCows.Presenter;
+using System;
 using System.Windows.Forms;
-using BoolsAndCows.Presenter;
 
-namespace BoolsAndCows
+namespace BoolsAndCows.View
 {
-    /* 
-      In MainForm class we dont't handle all events that occur with this form, it happens in Presenters Classes 
-      with Models classes. So View and Model are not interacting between each other directly, only by Presenter.
-    */
-
     public partial class MainForm : Form
     {
         private FormEventsHandler eventsHandler;
@@ -21,12 +16,14 @@ namespace BoolsAndCows
         private void MainForm_Load(object sender, EventArgs e)
         {
             // any event that occurs with form will handle by this apropriate object method.
-            eventsHandler = new FormEventsHandler(this);
+            FormEventsHandler eventsHandler = new FormEventsHandler(this);
             eventsHandler.StartProcessButtonsClicks();
             eventsHandler.StartProcessFormClosing();
             eventsHandler.StartProcessKeysClick();
         }
     }
+
+    // PLAY WITH FORM GUI
     // PUSH ON GIT 
     // PUSH ON STACK OVERFLOW
 }
