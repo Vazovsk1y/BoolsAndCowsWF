@@ -40,7 +40,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.vButton5 = new BoolsAndCows.Components.VButton();
-            this.systemNumberBox = new BoolsAndCows.Components.VLabel();
             this.userNumberBox = new BoolsAndCows.Components.VTextBox();
             this.vLabel3 = new BoolsAndCows.Components.VLabel();
             this.vLabel1 = new BoolsAndCows.Components.VLabel();
@@ -60,6 +59,7 @@
             this.button1 = new BoolsAndCows.Components.VButton();
             this.actionsField = new BoolsAndCows.Components.VRichTextBox();
             this.vButton1 = new BoolsAndCows.Components.VButton();
+            this.systemNumberBox = new BoolsAndCows.Components.VLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -197,26 +197,6 @@
             this.vButton5.Text = "Clear";
             this.vButton5.UseVisualStyleBackColor = true;
             // 
-            // systemNumberBox
-            // 
-            this.systemNumberBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.systemNumberBox.ButtonOutlineColor = System.Drawing.Color.Empty;
-            this.systemNumberBox.FirstColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.systemNumberBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.systemNumberBox.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.systemNumberBox.ForeColor = System.Drawing.Color.White;
-            this.systemNumberBox.GradientAngle = 98F;
-            this.systemNumberBox.GradientEnable = false;
-            this.systemNumberBox.IsAnimationEnable = true;
-            this.systemNumberBox.Location = new System.Drawing.Point(12, 158);
-            this.systemNumberBox.Name = "systemNumberBox";
-            this.systemNumberBox.Rounding = 60;
-            this.systemNumberBox.RoundingEnable = true;
-            this.systemNumberBox.SecondColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
-            this.systemNumberBox.Size = new System.Drawing.Size(159, 59);
-            this.systemNumberBox.TabIndex = 40;
-            this.systemNumberBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // userNumberBox
             // 
             this.userNumberBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
@@ -245,7 +225,7 @@
             this.vLabel3.FirstColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.vLabel3.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.vLabel3.ForeColor = System.Drawing.Color.White;
-            this.vLabel3.GradientAngle = 173F;
+            this.vLabel3.GradientAngle = 97F;
             this.vLabel3.GradientEnable = true;
             this.vLabel3.IsAnimationEnable = true;
             this.vLabel3.Location = new System.Drawing.Point(-5, 89);
@@ -264,7 +244,7 @@
             this.vLabel1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.vLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.vLabel1.ForeColor = System.Drawing.Color.White;
-            this.vLabel1.GradientAngle = 30F;
+            this.vLabel1.GradientAngle = 315F;
             this.vLabel1.GradientEnable = true;
             this.vLabel1.IsAnimationEnable = true;
             this.vLabel1.Location = new System.Drawing.Point(242, 158);
@@ -437,7 +417,7 @@
             this.vButton12.RoundingEnable = false;
             this.vButton12.SecondColor = System.Drawing.Color.Empty;
             this.vButton12.Size = new System.Drawing.Size(100, 50);
-            this.vButton12.TabIndex = 39;
+            this.vButton12.TabIndex = 42;
             // 
             // vButton10
             // 
@@ -615,6 +595,26 @@
             this.vButton1.Text = "Start";
             this.vButton1.UseVisualStyleBackColor = true;
             // 
+            // systemNumberBox
+            // 
+            this.systemNumberBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.systemNumberBox.ButtonOutlineColor = System.Drawing.Color.Empty;
+            this.systemNumberBox.FirstColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.systemNumberBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.systemNumberBox.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.systemNumberBox.ForeColor = System.Drawing.Color.White;
+            this.systemNumberBox.GradientAngle = 264F;
+            this.systemNumberBox.GradientEnable = false;
+            this.systemNumberBox.IsAnimationEnable = true;
+            this.systemNumberBox.Location = new System.Drawing.Point(12, 155);
+            this.systemNumberBox.Name = "systemNumberBox";
+            this.systemNumberBox.Rounding = 60;
+            this.systemNumberBox.RoundingEnable = true;
+            this.systemNumberBox.SecondColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
+            this.systemNumberBox.Size = new System.Drawing.Size(159, 59);
+            this.systemNumberBox.TabIndex = 43;
+            this.systemNumberBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -622,8 +622,8 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.ClientSize = new System.Drawing.Size(934, 611);
-            this.Controls.Add(this.vButton5);
             this.Controls.Add(this.systemNumberBox);
+            this.Controls.Add(this.vButton5);
             this.Controls.Add(this.userNumberBox);
             this.Controls.Add(this.vLabel3);
             this.Controls.Add(this.label6);
@@ -698,8 +698,8 @@
         internal Components.VButton vButton4;
         internal Components.VButton vButton16;
         internal Components.VTextBox userNumberBox;
-        internal Components.VLabel systemNumberBox;
         internal Components.VRichTextBox actionsField;
         internal Components.VButton vButton5;
+        internal Components.VLabel systemNumberBox;
     }
 }
